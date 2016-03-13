@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Artist
  *
- * @ORM\Table()
+ * @ORM\Table(name="vocadb_song_artist")
  * @ORM\Entity(repositoryClass="Pbxg33k\VocadbBundle\Entity\Song\ArtistRepository")
  */
 class Artist

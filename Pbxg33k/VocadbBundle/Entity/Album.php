@@ -10,7 +10,7 @@ use Pbxg33k\VocadbBundle\Entity\Album\Track;
 /**
  * Album
  *
- * @ORM\Table()
+ * @ORM\Table(name="vocadb_album")
  * @ORM\Entity(repositoryClass="Pbxg33k\VocadbBundle\Entity\AlbumRepository")
  */
 class Album

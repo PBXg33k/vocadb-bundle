@@ -8,7 +8,7 @@ use Pbxg33k\VocadbBundle\Entity;
 /**
  * Track
  *
- * @ORM\Table()
+ * @ORM\Table(name="vocadb_album_track")
  * @ORM\Entity(repositoryClass="Pbxg33k\VocadbBundle\Entity\Album\TrackRepository")
  */
 class Track
