@@ -1,5 +1,5 @@
 {
-    "name": "pbx_g33k/vocadb-bundle",
+    "name": "pbxg33k/vocadb-bundle",
     "type": "symfony-bundle",
     "require": {
         "psr/log": "^1.0"
