@@ -1,0 +1,14 @@
+{
+    "name": "pbx_g33k/vocadb-bundle",
+    "type": "symfony-bundle",
+    "require": {
+        "psr/log": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oguzhan Uysal",
+            "email": "development@oguzhanuysal.eu"
+        }
+    ]
+}

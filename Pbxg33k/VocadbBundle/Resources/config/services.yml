@@ -2,3 +2,32 @@ services:
 #    pbxg33k_vocadb.example:
 #        class: Pbxg33k\VocadbBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
+    pbxg33k_vocadb.admin.album_artist:
+        class: Pbxg33k\VocadbBundle\Admin\AlbumArtistAdmin
+        arguments: [~, Pbxg33k\VocadbBundle\Entity\Album\Artist, Pbxg33kVocadbBundle:AlbumArtistAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Artist}
+
+    pbxg33k_vocadb.admin.album_track:
+        class: Pbxg33k\VocadbBundle\Admin\AlbumTrackAdmin
+        arguments: [~, Pbxg33k\VocadbBundle\Entity\Album\Track, Pbxg33kVocadbBundle:AlbumTrackAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Track}
+
+    pbxg33k_vocadb.admin.album:
+        class: Pbxg33k\VocadbBundle\Admin\AlbumAdmin
+        arguments: [~, Pbxg33k\VocadbBundle\Entity\Album, Pbxg33kVocadbBundle:AlbumAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Album}
+
+    pbxg33k_vocadb.admin.artist:
+        class: Pbxg33k\VocadbBundle\Admin\ArtistAdmin
+        arguments: [~, Pbxg33k\VocadbBundle\Entity\Artist, Pbxg33kVocadbBundle:ArtistAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Artist}
+
+    pbxg33k_vocadb.admin.song:
+        class: Pbxg33k\VocadbBundle\Admin\SongAdmin
+        arguments: [~, Pbxg33k\VocadbBundle\Entity\Song, Pbxg33kVocadbBundle:SongAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Song}
