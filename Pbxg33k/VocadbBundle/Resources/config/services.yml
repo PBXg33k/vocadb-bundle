@@ -1,0 +1,4 @@
+services:
+#    pbxg33k_vocadb.example:
+#        class: Pbxg33k\VocadbBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
