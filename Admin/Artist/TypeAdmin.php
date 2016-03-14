@@ -1,6 +1,6 @@
 <?php
 
-namespace Pbxg33k\VocadbBundle\Admin;
+namespace Pbxg33k\VocadbBundle\Admin\Artist;
 
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -8,7 +8,7 @@ use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
 
-class AlbumArtistAdmin extends Admin
+class TypeAdmin extends Admin
 {
     /**
      * @param DatagridMapper $datagridMapper
@@ -17,7 +17,9 @@ class AlbumArtistAdmin extends Admin
     {
         $datagridMapper
             ->add('id')
-            ->add('roleId')
+            ->add('name')
+            ->add('enabled')
+            ->add('hidden')
         ;
     }
 
@@ -28,7 +30,9 @@ class AlbumArtistAdmin extends Admin
     {
         $listMapper
             ->add('id')
-            ->add('roleId')
+            ->add('name')
+            ->add('enabled')
+            ->add('hidden')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -46,7 +50,9 @@ class AlbumArtistAdmin extends Admin
     {
         $formMapper
             ->add('id')
-            ->add('roleId')
+            ->add('name')
+            ->add('enabled')
+            ->add('hidden')
         ;
     }
 
@@ -57,7 +63,9 @@ class AlbumArtistAdmin extends Admin
     {
         $showMapper
             ->add('id')
-            ->add('roleId')
+            ->add('name')
+            ->add('enabled')
+            ->add('hidden')
         ;
     }
 }

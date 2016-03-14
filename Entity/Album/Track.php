@@ -23,7 +23,7 @@ class Track
     private $id;
 
     /**
-     * @var integer
+     * @var Entity\Album
      *
      * @ORM\ManyToOne(targetEntity="Pbxg33k\VocadbBundle\Entity\Album", inversedBy="tracks")
      * @ORM\JoinColumn(name="album_id", referencedColumnName="id")
@@ -31,7 +31,7 @@ class Track
     private $album;
 
     /**
-     * @var integer
+     * @var Entity\Song
      *
      * @ORM\ManyToOne(targetEntity="Pbxg33k\VocadbBundle\Entity\Song")
      * @ORM\JoinColumn(name="song_id", referencedColumnName="id")

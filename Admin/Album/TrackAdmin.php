@@ -1,6 +1,6 @@
 <?php
 
-namespace Pbxg33k\VocadbBundle\Admin;
+namespace Pbxg33k\VocadbBundle\Admin\Album;
 
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -8,7 +8,7 @@ use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
 
-class AlbumTrackAdmin extends Admin
+class TrackAdmin extends Admin
 {
     /**
      * @param DatagridMapper $datagridMapper

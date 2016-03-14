@@ -1,6 +1,6 @@
 <?php
 
-namespace Pbxg33k\VocadbBundle\Controller;
+namespace Pbxg33k\VocadbBundle\Controller\Admin;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
