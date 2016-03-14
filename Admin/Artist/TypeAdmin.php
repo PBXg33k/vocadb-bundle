@@ -49,7 +49,6 @@ class TypeAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('id')
             ->add('name')
             ->add('enabled')
             ->add('hidden')
